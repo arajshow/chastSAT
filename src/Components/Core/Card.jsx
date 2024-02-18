@@ -40,7 +40,7 @@ const Card = ({ data }) => {
   return (
     <>
       <div
-        className="card relative md:h-68 md:w-80 h-[80%] w-[90%] transition-all duration-400 ease-in-out will-change-transform"
+        className="card relative h-68 md:w-80 w-[90%] overflow-hidden transition-all duration-400 ease-in-out will-change-transform"
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
         style={{
@@ -54,7 +54,7 @@ const Card = ({ data }) => {
             <p>{data.title}</p>
             <p>{data.date}</p>
           </div>
-          <PiTrendUpBold className="text-8xl font-extrabold h-[44%] text-[1.3em]" />
+          <PiTrendUpBold className=" text-7xl" />
           <p className="text-4xl font-bold">{data.heading}</p>
           <p className="text-[1.2em]">{data.description}</p>
         </div>
