@@ -79,7 +79,7 @@ const SideBar = () => {
         </div>
 
         {/* leaderBoard */}
-        <div className="relative overflow-auto flex flex-col max-h-[320px] gap-2 z-30 pb-3 w-full box-with-shadows items-center justify-start mx-auto font-bold border border-[#707D61] text-color1 transition-all duration-500 rounded-lg cursor-pointer group ease bg-midColor">
+        <div className="relative overflow-auto flex flex-col max-h-[310px] gap-2 z-30 pb-3 w-full box-with-shadows items-center justify-start mx-auto font-bold border border-[#707D61] text-color1 transition-all duration-500 rounded-lg cursor-pointer group ease bg-midColor">
           <HighLightSec
             text={"Leaderboard"}
             customClass={"sticky top-0 z-50 flex-shrink-0 w-full px-5 py-3"}
