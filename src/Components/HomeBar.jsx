@@ -12,7 +12,7 @@ const HomeBar = () => {
           Hey, <span className="text-highlight">Anand!</span>
         </p>
         <p className="text-white text-5xl font-semibold">
-          How's your prep for the{" "}
+          How&apos;s your prep for the{" "}
           <span className="text-highlight">March SAT</span>
         </p>
       </div>

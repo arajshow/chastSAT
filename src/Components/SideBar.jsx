@@ -14,6 +14,7 @@ const SideBar = () => {
         <Image
           src="https://res.cloudinary.com/diowelnqf/image/upload/v1708223784/photo_ql9q9g.png"
           className="relative aspect-w-16 aspect-h-16 rounded-full overflow-hidden"
+          alt="img"
           width={32}
           height={32}
         />
@@ -100,6 +101,7 @@ const SideBar = () => {
                   <Image
                     src="https://res.cloudinary.com/diowelnqf/image/upload/v1708223784/photo_ql9q9g.png"
                     className="relative aspect-w-16 aspect-h-16 rounded-full overflow-hidden"
+                    alt="img"
                     width={20}
                     height={20}
                   />
@@ -121,6 +123,7 @@ const SideBar = () => {
             <Image
               src="https://res.cloudinary.com/diowelnqf/image/upload/v1708223784/photo_ql9q9g.png"
               className="relative aspect-w-16 aspect-h-16 rounded-full overflow-hidden"
+              alt="img"
               width={48}
               height={48}
             />
