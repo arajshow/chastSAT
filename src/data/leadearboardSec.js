@@ -1,7 +1,7 @@
 export const leadearboardSec = [
     {
         id : "01.",
-        title: "Name",
+        title: "Anand",
         streak : "0/233"
     },
     {
@@ -264,9 +264,4 @@ export const leadearboardSec = [
         title: "Name",
         streak : "0/233"
     },
-    {
-        id : "54.",
-        title: "NamYou",
-        streak : "0/233"
-    }
 ];

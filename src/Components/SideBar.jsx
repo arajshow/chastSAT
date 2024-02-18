@@ -79,13 +79,16 @@ const SideBar = () => {
         </div>
 
         {/* leaderBoard */}
-        <div className="relative flex flex-col max-h-[320px] gap-2 z-30 pb-3 w-full box-with-shadows items-center justify-start mx-auto overflow-hidden font-bold border border-[#707D61] text-color1 transition-all duration-500 rounded-lg cursor-pointer group ease bg-midColor">
-          <HighLightSec text={"Leaderboard"} customClass={"w-full px-5 py-3"} />
-          {leadearboardSec.slice(0, 3).map((data) => (
+        <div className="relative overflow-auto flex flex-col max-h-[320px] gap-2 z-30 pb-3 w-full box-with-shadows items-center justify-start mx-auto font-bold border border-[#707D61] text-color1 transition-all duration-500 rounded-lg cursor-pointer group ease bg-midColor">
+          <HighLightSec
+            text={"Leaderboard"}
+            customClass={"sticky top-0 z-50 flex-shrink-0 w-full px-5 py-3"}
+          />
+          {leadearboardSec.map((data) => (
             <HighLightSec
               key={data.id}
-              customClass={`hover:scale-105 w-[90%] mx-auto px-5 py-3 ${
-                data.id === "54."
+              customClass={`flex-shrink-0 hover:scale-105 w-[90%] mx-auto px-5 py-3 ${
+                data.id === "01."
                   ? "bg-gradient-to-b from-highlight/50 to-LcornerColor border-[#334640] "
                   : ""
               }`}
@@ -110,31 +113,6 @@ const SideBar = () => {
               </div>
             </HighLightSec>
           ))}
-          <HighLightSec
-            key={leadearboardSec[53].id}
-            customClass={`hover:scale-105 flex-shrink-0 w-[90%] mx-auto px-5 py-3 bg-gradient-to-b from-highlight/50 to-LcornerColor border-[#334640]`}
-          >
-            <div className={`flex flex-row justify-between`}>
-              <div className="flex flex-row justify-start items-center gap-1">
-                <span className=" text-highlight">
-                  {leadearboardSec[53].id}
-                </span>
-                <PiMedalFill className="text-highlight" />
-                <Image
-                  src="https://res.cloudinary.com/diowelnqf/image/upload/v1708223784/photo_ql9q9g.png"
-                  className="relative aspect-w-16 aspect-h-16 rounded-full overflow-hidden"
-                  width={20}
-                  height={20}
-                />
-                <p>{leadearboardSec[53].title}</p>
-              </div>
-
-              <div className="xl:flex flex-row items-center justify-end gap-1 hidden">
-                <p className="text-[1.2em] text-white">0/233</p>
-                <span className="text-highlight">XP</span>
-              </div>
-            </div>
-          </HighLightSec>
         </div>
 
         {/* name deatail */}
