@@ -17,7 +17,7 @@ const HomeBar = () => {
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 cursor-pointer">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-12 cursor-pointer">
         {prepData.map((data, id) => (
           <Card key={id} data={data} />
         ))}
